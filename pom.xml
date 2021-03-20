@@ -18,6 +18,7 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	
 	<dependencies>
 	
 		<dependency>
@@ -79,10 +80,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-			</plugin>
-			<plugin>	
- 	     	    <groupId>pl.project13.maven</groupId>
-		        <artifactId>git-commit-id-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
