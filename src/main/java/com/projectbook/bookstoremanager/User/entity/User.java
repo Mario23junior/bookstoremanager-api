@@ -15,9 +15,10 @@ import javax.persistence.OneToMany;
 
 import com.projectbook.bookstoremanager.Book.entity.Book;
 import com.projectbook.bookstoremanager.User.entity.enums.Gender;
+import com.projectbook.bookstoremanager.entity.Auditable;
 
 @Entity
-public class User {
+public class User extends Auditable{
     
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
