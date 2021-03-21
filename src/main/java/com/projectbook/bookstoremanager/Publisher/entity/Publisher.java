@@ -12,9 +12,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import com.projectbook.bookstoremanager.Book.entity.Book;
+import com.projectbook.bookstoremanager.entity.Auditable;
 
 @Entity
-public class Publisher {
+public class Publisher extends Auditable{
     
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
