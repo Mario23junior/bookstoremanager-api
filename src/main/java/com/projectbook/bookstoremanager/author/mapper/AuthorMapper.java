@@ -1,0 +1,17 @@
+package com.projectbook.bookstoremanager.author.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.factory.Mappers;
+
+import com.projectbook.bookstoremanager.author.dto.AuthorDTO;
+import com.projectbook.bookstoremanager.author.entity.Author;
+
+@Mapper
+public interface AuthorMapper {
+   
+	AuthorMapper INCTANCE = Mappers.getMapper(AuthorMapper.class);
+	
+	Author toModel(AuthorDTO authorDTO);
+	
+	AuthorDTO toDto(Author author);
+}
