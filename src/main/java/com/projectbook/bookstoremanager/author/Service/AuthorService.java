@@ -9,7 +9,7 @@ import com.projectbook.bookstoremanager.author.repository.AuthorRepository;
 @Service
 public class AuthorService {
    
-	private final static AuthorMapper AUTHOR_MAPPER = AuthorMapper.INCTANCE;
+	private final static AuthorMapper authorMapper = AuthorMapper.INSTANCE;
 	
 	private AuthorRepository authorRepository;
 	
