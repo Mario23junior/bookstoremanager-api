@@ -9,9 +9,9 @@ import com.projectbook.bookstoremanager.author.entity.Author;
 @Mapper
 public interface AuthorMapper {
    
-	AuthorMapper INCTANCE = Mappers.getMapper(AuthorMapper.class);
+	AuthorMapper INSTANCE = Mappers.getMapper(AuthorMapper.class);
 	
 	Author toModel(AuthorDTO authorDTO);
 	
-	AuthorDTO toDto(Author author);
+	AuthorDTO toDTO(Author author);
 }
